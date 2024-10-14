@@ -31,3 +31,21 @@ return notification
  console.log(sendNotification ('nadim.name@yaho.com'));
  console.log(sendNotification ('fahim234.hotmail.com'));
  console.log(sendNotification ('sadia8cloud.com'));
+
+ function checkDigit(name){
+    if(typeof name !== 'string'){
+        return 'Invaltd Input'
+    }
+    let nameArr = name.split('')
+    for(let char of nameArr){
+        if(!isNaN(char)){
+            return true
+        }
+    }
+    return false
+ }
+ console.log(checkDigit('raj123'));
+ console.log(checkDigit('sumon'));
+ console.log(checkDigit('name2024'));
+ console.log(checkDigit('!@'));
+ console.log(checkDigit(['Raj']));
