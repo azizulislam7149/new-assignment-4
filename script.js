@@ -14,4 +14,20 @@ console.log(calculateTax(7000, 7000));
 console.log(calculateTax(-5000, 1500));
 console.log(calculateTax(6000, -1500));
 
-    
+ function sendNotification(email){
+if(email.split('') .indexOf('@')=== -1){
+    return 'Invalid Input'
+}
+// if(email.split('') .includesOf('@')=== false){
+//     return 'Invalid Input'
+// }
+let emailArr = email.split('@');
+let notification =`${emailArr[0]} sent you an email from ${emailArr[1]} `
+return notification
+ } 
+ 
+ console.log(sendNotification ('zihad@gmail.com'));
+ console.log(sendNotification ('farhan34@yaho.com'));
+ console.log(sendNotification ('nadim.name@yaho.com'));
+ console.log(sendNotification ('fahim234.hotmail.com'));
+ console.log(sendNotification ('sadia8cloud.com'));
